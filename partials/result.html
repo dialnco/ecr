@@ -1,1 +1,135 @@
-<nav class="light-blue lighten-1" role="navigation"> <div class="nav-wrapper container"><a id="logo-container" href="#/" class="brand-logo">Dial</a> <ul class="right"> <li><button class="btn-flat waves-effect light" style="color:white" onclick="descargarcsv()">Descargar <i class="tiny material-icons right" style="margin-top:-0.5em">library_books</i> </button></li></ul> </div></nav><div class="component" id="tabla-resultados"><table class=""> <thead> <tr> <th>APELLIDO</th> <th>NOMBRE</th> <th>EDAD</th> <th>SEXO</th> <th>NSE</th> <th>CONSENT</th> <th>MAIL</th> <th>TEC_00</th> <th>TEC_01</th> <th>TEC_02</th> <th>TEC_03</th> <th>TEC_04</th> <th>TEC_05</th> <th>TEC_06</th> <th>TEC_07</th> <th>TEC_08</th> <th>TEC_09</th> <th>TEC_10</th> <th>TEC_11</th> <th>TEC_12</th> <th>ECR_01</th> <th>ECR_02</th> <th>ECR_03</th> <th>ECR_04</th> <th>ECR_05</th> <th>ECR_06</th> <th>ECR_07</th> <th>ECR_08</th> <th>ECR_09</th> <th>ECR_10</th> <th>ECR_11</th> <th>ECR_12</th> <th>ECR_13</th> <th>ECR_14</th> <th>ECR_15</th> <th>ECR_16</th> <th>ECR_17</th> <th>ECR_18</th> <th>ECR_19</th> <th>ECR_20</th> <th>ECR_21</th> <th>ECR_22</th> <th>ECR_23</th> <th>ECR_24</th> <th>ECR_25</th> <th>ECR_26</th> <th>ECR_27</th> <th>ECR_28</th> <th>ECR_29</th> <th>ECR_30</th> <th>ECR_31</th> <th>ECR_32</th> <th>ECR_33</th> <th>ECR_34</th> <th>ECR_35</th> <th>ECR_36</th> </tr></thead> <tbody> <tr ng-repeat="result in results"> <td>{{result.APELLIDO}}</td><td>{{result.NOMBRE}}</td><td>{{result.EDAD}}</td><td>{{result.SEXO}}</td><td>{{result.NSE}}</td><td>{{result.CONSENT}}</td><td>{{result.MAIL}}</td><td>{{result.TEC_00}}</td><td>{{result.TEC_01}}</td><td>{{result.TEC_02}}</td><td>{{result.TEC_03}}</td><td>{{result.TEC_04}}</td><td>{{result.TEC_05}}</td><td>{{result.TEC_06}}</td><td>{{result.TEC_07}}</td><td>{{result.TEC_08}}</td><td>{{result.TEC_09}}</td><td>{{result.TEC_10}}</td><td>{{result.TEC_11}}</td><td>{{result.TEC_12}}</td><td>{{result.ECR_01}}</td><td>{{result.ECR_02}}</td><td>{{result.ECR_03}}</td><td>{{result.ECR_04}}</td><td>{{result.ECR_05}}</td><td>{{result.ECR_06}}</td><td>{{result.ECR_07}}</td><td>{{result.ECR_08}}</td><td>{{result.ECR_09}}</td><td>{{result.ECR_10}}</td><td>{{result.ECR_11}}</td><td>{{result.ECR_12}}</td><td>{{result.ECR_13}}</td><td>{{result.ECR_14}}</td><td>{{result.ECR_15}}</td><td>{{result.ECR_16}}</td><td>{{result.ECR_17}}</td><td>{{result.ECR_18}}</td><td>{{result.ECR_19}}</td><td>{{result.ECR_20}}</td><td>{{result.ECR_21}}</td><td>{{result.ECR_22}}</td><td>{{result.ECR_23}}</td><td>{{result.ECR_24}}</td><td>{{result.ECR_25}}</td><td>{{result.ECR_26}}</td><td>{{result.ECR_27}}</td><td>{{result.ECR_28}}</td><td>{{result.ECR_29}}</td><td>{{result.ECR_30}}</td><td>{{result.ECR_31}}</td><td>{{result.ECR_32}}</td><td>{{result.ECR_33}}</td><td>{{result.ECR_34}}</td><td>{{result.ECR_35}}</td><td>{{result.ECR_36}}</td></tr></tbody></table></div><script src="js/jquery.stickyheader.js"></script>
+<nav class="light-blue lighten-1" role="navigation">
+  <div class="nav-wrapper container"><a id="logo-container" href="#/" class="brand-logo">Dial</a>
+    <ul class="right">
+      <li><button class="btn-flat waves-effect light" style="color:white" onclick="descargarcsv()">Descargar
+         <i class="tiny material-icons right" style="margin-top:-0.5em">library_books</i>
+       </button></li>
+    </ul>
+  </div>
+</nav>
+<div class="component" id="tabla-resultados">
+	<table class="">
+    <thead>
+        <tr>
+            <th>APELLIDO</th>
+            <th>NOMBRE</th>
+            <th>EDAD</th>
+            <th>SEXO</th>
+            <th>NSE</th>
+            <th>CONSENT</th>
+            <th>MAIL</th>
+            <th>TEC_00</th>
+            <th>TEC_01</th>
+            <th>TEC_02</th>
+            <th>TEC_03</th>
+            <th>TEC_04</th>
+            <th>TEC_05</th>
+            <th>TEC_06</th>
+            <th>TEC_07</th>
+            <th>TEC_08</th>
+            <th>TEC_09</th>
+            <th>TEC_10</th>
+            <th>TEC_11</th>
+            <th>TEC_12</th>
+            <th>ECR_01</th>
+            <th>ECR_02</th>
+            <th>ECR_03</th>
+            <th>ECR_04</th>
+            <th>ECR_05</th>
+            <th>ECR_06</th>
+            <th>ECR_07</th>
+            <th>ECR_08</th>
+            <th>ECR_09</th>
+            <th>ECR_10</th>
+            <th>ECR_11</th>
+            <th>ECR_12</th>
+            <th>ECR_13</th>
+            <th>ECR_14</th>
+            <th>ECR_15</th>
+            <th>ECR_16</th>
+            <th>ECR_17</th>
+            <th>ECR_18</th>
+            <th>ECR_19</th>
+            <th>ECR_20</th>
+            <th>ECR_21</th>
+            <th>ECR_22</th>
+            <th>ECR_23</th>
+            <th>ECR_24</th>
+            <th>ECR_25</th>
+            <th>ECR_26</th>
+            <th>ECR_27</th>
+            <th>ECR_28</th>
+            <th>ECR_29</th>
+            <th>ECR_30</th>
+            <th>ECR_31</th>
+            <th>ECR_32</th>
+            <th>ECR_33</th>
+            <th>ECR_34</th>
+            <th>ECR_35</th>
+            <th>ECR_36</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr ng-repeat="result in results">
+            <td>{{result.APELLIDO}}</td>
+            <td>{{result.NOMBRE}}</td>
+            <td>{{result.EDAD}}</td>
+            <td>{{result.SEXO}}</td>
+            <td>{{result.NSE}}</td>
+            <td>{{result.CONSENT}}</td>
+            <td>{{result.MAIL}}</td>
+            <td>{{result.TEC_00}}</td>
+            <td>{{result.TEC_01}}</td>
+            <td>{{result.TEC_02}}</td>
+            <td>{{result.TEC_03}}</td>
+            <td>{{result.TEC_04}}</td>
+            <td>{{result.TEC_05}}</td>
+            <td>{{result.TEC_06}}</td>
+            <td>{{result.TEC_07}}</td>
+            <td>{{result.TEC_08}}</td>
+            <td>{{result.TEC_09}}</td>
+            <td>{{result.TEC_10}}</td>
+            <td>{{result.TEC_11}}</td>
+            <td>{{result.TEC_12}}</td>
+            <td>{{result.ECR_01}}</td>
+            <td>{{result.ECR_02}}</td>
+            <td>{{result.ECR_03}}</td>
+            <td>{{result.ECR_04}}</td>
+            <td>{{result.ECR_05}}</td>
+            <td>{{result.ECR_06}}</td>
+            <td>{{result.ECR_07}}</td>
+            <td>{{result.ECR_08}}</td>
+            <td>{{result.ECR_09}}</td>
+            <td>{{result.ECR_10}}</td>
+            <td>{{result.ECR_11}}</td>
+            <td>{{result.ECR_12}}</td>
+            <td>{{result.ECR_13}}</td>
+            <td>{{result.ECR_14}}</td>
+            <td>{{result.ECR_15}}</td>
+            <td>{{result.ECR_16}}</td>
+            <td>{{result.ECR_17}}</td>
+            <td>{{result.ECR_18}}</td>
+            <td>{{result.ECR_19}}</td>
+            <td>{{result.ECR_20}}</td>
+            <td>{{result.ECR_21}}</td>
+            <td>{{result.ECR_22}}</td>
+            <td>{{result.ECR_23}}</td>
+            <td>{{result.ECR_24}}</td>
+            <td>{{result.ECR_25}}</td>
+            <td>{{result.ECR_26}}</td>
+            <td>{{result.ECR_27}}</td>
+            <td>{{result.ECR_28}}</td>
+            <td>{{result.ECR_29}}</td>
+            <td>{{result.ECR_30}}</td>
+            <td>{{result.ECR_31}}</td>
+            <td>{{result.ECR_32}}</td>
+            <td>{{result.ECR_33}}</td>
+            <td>{{result.ECR_34}}</td>
+            <td>{{result.ECR_35}}</td>
+            <td>{{result.ECR_36}}</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<script src="js/jquery.stickyheader.js"></script>
